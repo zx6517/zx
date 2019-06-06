@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="switcher.js"></script>
+    <script>
+        // 在窗体加载时，对开关组件进行初始化
+        window.onload = function() {
+            switcher.init("#c1");
+            switcher.init("#c2");
+        }
+    </script>
+</head>
+<body>
+    <canvas id="c1" width="60px" height="30px" on="blue" off="gray" circle="white" status="on"></canvas>
+    <canvas id="c2" width="40px" height="20px" on="orange" off="yellow" circle="lightgray" status="off"></canvas>
+</body>
+</html>
